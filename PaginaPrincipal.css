@@ -1,11 +1,11 @@
 /*Reglas BootStrap*/
-.container{
+.container {
     max-width: 100vw !important;
+    width: 100%;
 }
 
-/*Testeo
 body{
-    background-color: red;
+    background-color: black;
 }
 
 /*Cabecera-Header*/
@@ -22,7 +22,7 @@ body{
 }
 
 #cabecera img{
-    height: 35px;
+    height: 42px;
     max-width: 200px;
     margin-top: 7px;
 }
@@ -34,11 +34,12 @@ body{
 /*Buscador*/
 
 .cajaB {
+    max-width: 180px;
     position: relative;
     top:5px;
     width: auto;
     height: auto;
-    left: 5%;
+    left: 2%;
 }
 
 .contendor-buscador {
@@ -99,7 +100,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
 }
 
 li {
@@ -141,24 +142,34 @@ li.pestaña {
 
 .contenidoPestaña a:hover {background-color: #f1f1f1}
 
-.pestaña:hover .contenidoPestaña {
+#navegador .pestaña:hover .contenidoPestaña {
     display: block;
 }
 
-/*Carousel*/
-.img-fluid {
-    max-width: 100%;
-    height: auto;
+/*Columna 3*/
+@media (max-width: 1000px) {
+	#esconder {
+		display: none;
+	}
 }
-.carousel-item .img-fluid {
-    width:100%;
-    height:100%;
-  }
 
-.carousel-item a {
-    display: block;
-    width:100%;
+#divCl {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
 }
-  
+#divCl>li{
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+#esconder div a img{
+    height: 120px;   
+    float: left;
+    margin-bottom: 10px;
+}
+
 
 /*Pie de Página-Footer*/
