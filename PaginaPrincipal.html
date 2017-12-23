@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="PaginaPrincipal.css">
+    <title>DIW</title>
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" id="cabecera">
+                    <div>
+                        <img src="images/logo.png" alt="logoEmpresa">
+                        <div class="cajaB" style="display:inline-block;">
+                            <div class="contendor-buscador">
+                                <span class="icon">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                                <input type="search" id="buscar" placeholder="Buscar..." />
+                            </div>
+                        </div>
+                        <img src="images/carrito.png" alt="carritoEmpresa" id="carrito">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Navegador-->
+    <div class="container" style="background-color:#333">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Instrumentos de Viento</a>
+                        </li>
+                        <li>
+                            <a href="">Instrumentos de Cuerda</a>
+                        </li>
+                        <li class="pestaña">
+                            <a href="javascript:void(0)" class="pestañabtn">Instrumento de Percusión</a>
+                            <div class="contenidoPestaña">
+                                <a href="#">Novedades</a>
+                                <a href="#">Más Vendidos</a>
+                                <a href="#">Catalogo</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="background-color:red;">
+                <picture>
+                    <source srcset="https://dummyimage.com/2000x400/007aeb/4196e5" media="(min-width: 1400px)">
+                    <source srcset="https://dummyimage.com/1400x400/007aeb/4196e5" media="(min-width: 768px)">
+                    <source srcset="https://dummyimage.com/800x400/007aeb/4196e5" media="(min-width: 576px)">
+                    <img srcset="https://dummyimage.com/600x400/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+                </picture>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="background-color:green;">hola adios</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
