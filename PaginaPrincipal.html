@@ -14,7 +14,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -22,7 +22,8 @@
     <!--Documento Css-->
     <link rel="stylesheet" href="box2/dist/css/lightbox.min.css">
     <link rel="stylesheet" href="PaginaPrincipal.css">
-    <link rel="icon" href="images/logo.png" type="image/png" sizes="16x16"> 
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="16x16">
+    <!--JavaScript-->
     <title>DIW</title>
 </head>
 
@@ -103,7 +104,7 @@
     </div>
 
     <!--Cuerpo-->
-    <div class="container" >
+    <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="background-color:#aaa; ">
                 <!--Carousel-->
@@ -143,19 +144,16 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="contenido2">
-                <h2>Contenido</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptate quidem iusto, ex labore voluptates
-                    temporibus? Cum facere corrupti ut asperiores odit dolor quibusdam, labore dolorum nobis! Nemo, labore
-                    fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque eos assumenda hic tempora, ullam
-                    odit voluptatem, architecto molestias natus libero numquam consequatur beatae dolor sed inventore magni
-                    non, totam error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et tenetur dignissimos consectetur
-                    cumque? Accusantium rem culpa omnis aliquam, non doloremque, necessitatibus ea sit enim, quia ullam harum
-                    illo in? Sunt?
-                </p>
+                <div style="margin:10px; text-align: center;">
+                    <video controls width="70%">
+                        <source id="cambiaVideo" src="VideosMusicales/pruebas.mp4" type="video/mp4"> Tu navegador no implementa el elemento
+                        <code>video</code>.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <br/>
 
     <div class="container">
@@ -163,35 +161,35 @@
             <div class="col-lg-12" style="background-color:#aaa">
                 <h1 style="text-align:center;">Instrumentos más populares</h1>
                 <ul id="divCl">
-                    <li>
+                    <li id="item1">
                         <a class="example-image-link" href="images\instrumentos\fender.png" data-lightbox="example-set">
                             <img class="example-image" src="images\instrumentos\fender.png" alt="" />
                         </a>
                         <br/>
                         <button>Comprar</button>
                     </li>
-                    <li>
+                    <li id="item2">
                         <a class="example-image-link" href="images\instrumentos\guitarra_ej.png" data-lightbox="example-set">
                             <img class="example-image" src="images\instrumentos\guitarra_ej.png" alt="" />
                         </a>
                         <br/>
                         <button>Comprar</button>
                     </li>
-                    <li>
+                    <li id="item3">
                         <a class="example-image-link" href="images\instrumentos\mapex.png" data-lightbox="example-set">
                             <img class="example-image" src="images\instrumentos\mapex.png" alt="" />
                         </a>
                         <br/>
                         <button>Comprar</button>
                     </li>
-                    <li>
+                    <li id="item4">
                         <a class="example-image-link" href="images\instrumentos\piano_ej.png" data-lightbox="example-set">
                             <img class="example-image" src="images\instrumentos\piano_ej.png" alt="" />
                         </a>
                         <br/>
                         <button>Comprar</button>
                     </li>
-                    <li>
+                    <li id="item5">
                         <a class="example-image-link" href="images\instrumentos\saxophone_ej.png" data-lightbox="example-set">
                             <img class="example-image" src="images\instrumentos\saxophone_ej.png" alt="" />
                         </a>
@@ -236,7 +234,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="PaginaPrincipal.js"></script>
 </body>
 
 </html>
