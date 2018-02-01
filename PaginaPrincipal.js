@@ -1,8 +1,11 @@
-var escogido = document.getElementById("item1");
+var videocontainer = document.getElementById('videoclip');
+var videosource = document.getElementById('videosource');
+var newmp4 = 'VideosMusicales/fender.mp4';
 
-escogido.addEventListener("click",function(){
-    var video = document.getElementById("cambiaVideo");
-    video.src = 'VideosMusicales/fender.mp4';
-    video.load();
-    video.play();
-})
+var videobutton = document.getElementById("item1");
+ 
+videobutton.addEventListener("click", function() {
+    videocontainer.pause();
+    videosource.setAttribute('src', newmp4);
+    videocontainer.load();
+});
