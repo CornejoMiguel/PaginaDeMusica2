@@ -6,14 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -144,7 +140,7 @@
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="contenido2">
                 <div style="margin:10px; text-align: center;">
-                    <video id="videoclip"controls width="70%">
+                    <video id="videoclip" controls width="70%">
                         <source id="videosource" src="VideosMusicales/pruebas.mp4" type="video/mp4"> Tu navegador no implementa el elemento
                         <code>video</code>.
                     </video>
@@ -160,13 +156,13 @@
             <div class="col-lg-12" style="background-color:#aaa">
                 <h1 style="text-align:center;">Instrumentos más populares</h1>
                 <ul id="divCl">
-                    <li >
+                    <li>
                         <a class="example-image-link" href="images\instrumentos\fender.png" data-lightbox="example-set">
                             <img class="example-image" src="images\instrumentos\fender.png" alt="" />
                         </a>
                         <br/>
                         <button>Comprar</button>
-                        <button id="item1">Mostrar prueba</button>
+                        <button id="guitarra" onclick="MostrarVideo(this)">Mostrar prueba</button>
                     </li>
                     <li id="item2">
                         <a class="example-image-link" href="images\instrumentos\guitarra_ej.png" data-lightbox="example-set">
@@ -174,6 +170,7 @@
                         </a>
                         <br/>
                         <button>Comprar</button>
+                        <button id="guitarra_electrica" onclick="MostrarVideo(this)">Mostrar prueba</button>
                     </li>
                     <li id="item3">
                         <a class="example-image-link" href="images\instrumentos\mapex.png" data-lightbox="example-set">
@@ -181,6 +178,7 @@
                         </a>
                         <br/>
                         <button>Comprar</button>
+                        <button id="bateria" onclick="MostrarVideo(this)">Mostrar prueba</button>
                     </li>
                     <li id="item4">
                         <a class="example-image-link" href="images\instrumentos\piano_ej.png" data-lightbox="example-set">
@@ -188,6 +186,7 @@
                         </a>
                         <br/>
                         <button>Comprar</button>
+                        <button id="piano" onclick="MostrarVideo(this)">Mostrar prueba</button>
                     </li>
                     <li id="item5">
                         <a class="example-image-link" href="images\instrumentos\saxophone_ej.png" data-lightbox="example-set">
@@ -195,6 +194,7 @@
                         </a>
                         <br/>
                         <button>Comprar</button>
+                        <button id="saxophone" onclick="MostrarVideo(this)">Mostrar prueba</button>
                     </li>
                 </ul>
             </div>
@@ -234,7 +234,7 @@
             </div>
         </div>
     </footer>
-    <!--JavaScript que nos permite a la hora de pulsar un producto cambiar el video--> 
+    <!--JavaScript que nos permite a la hora de pulsar un producto cambiar el video-->
     <script src="PaginaPrincipal.js"></script>
 </body>
 

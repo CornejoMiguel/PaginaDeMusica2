@@ -1,11 +1,8 @@
 var videocontainer = document.getElementById('videoclip');
 var videosource = document.getElementById('videosource');
-var newmp4 = 'VideosMusicales/fender.mp4';
 
-var videobutton = document.getElementById("item1");
- 
-videobutton.addEventListener("click", function() {
+function MostrarVideo(boton) {
     videocontainer.pause();
-    videosource.setAttribute('src', newmp4);
+    videosource.setAttribute('src', "VideosMusicales/" + boton.id + ".mp4");
     videocontainer.load();
-});
+};
