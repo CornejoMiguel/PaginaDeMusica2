@@ -236,20 +236,6 @@ ul .informacion{
     background-color: inherit !important;
 }
 
-footer #rSociales ul {
-
-    float: right;
-    position: relative;
-    top: 10px;
-}
-
 footer ul li img {
     width: 30px;
 }
-
-#rSociales{
-    display: inline-block;
-    background-color: transparent !important; 
-    position: relative;
-    top: 10px;   
-} 
