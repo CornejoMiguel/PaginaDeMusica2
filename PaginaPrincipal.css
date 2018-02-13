@@ -17,6 +17,7 @@ body {
     background-image: url(images/bg.jpg);
     overflow-x: hidden;
     overflow-y: scroll;
+    background-size: cover;
 }
 
 a {
@@ -177,10 +178,6 @@ li.pestaña {
 
 /*Comienza el cuerpo de la página*/
 
-#contenido2 {
-    background-color: #aaa;
-}
-
 
 /*Columna 3*/
 
@@ -209,7 +206,7 @@ li.pestaña {
 }
 
 #divCl>li {
-    background-color: #000000b9;
+    /*background-color: #000000b9;*/
 }
 
 #divCl>li>span {
@@ -218,7 +215,6 @@ li.pestaña {
 }
 
 #divCl>li>span:first {
-    background-color: #ffffff83;
     color: white;
 }
 
@@ -230,32 +226,23 @@ li.pestaña {
 
 /*Pie de Página-Footer*/
 
-footer {
-    background-color: #aaa !important;
+footer ul{
+    background-color: #0000008c;
 }
 
 footer #rSociales ul {
-    background-color: #aaa;
+
     float: right;
     position: relative;
     top: 10px;
 }
 
-footer #rSociales ul li img {
+footer ul li img {
     width: 30px;
 }
 
-@media (max-width:425px) {
-    footer #rSociales ul {
-        display: inline-grid;
-    }
-    footer #rSociales ul li {
-        padding-bottom: 15px;
-    }
-}
-
-@media(min-width:378px) {
-    footer #rSociales ul li {
-        padding-right: 15px;
-    }
+#rSociales{
+    background-color: transparent !important; 
+    position: relative;
+    top: 10px;   
 }
