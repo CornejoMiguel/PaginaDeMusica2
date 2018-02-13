@@ -18,6 +18,7 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     background-size: cover;
+    font-family: 'Anton', sans-serif;
 }
 
 a {
