@@ -125,7 +125,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+
 }
 
 li {
@@ -218,16 +218,22 @@ li.pestaña {
     color: white;
 }
 
-.col-lg-12>h1 {
-    background-color: #00000083;
-    color: white!important;
+#escondido{
+    background-color: #0000008c;
 }
 
+#escondido h1{
+    color: white;
+}
 
 /*Pie de Página-Footer*/
 
 footer ul{
-    background-color: #0000008c;
+    /*background-color: #0000008c;*/
+    color: white;
+}
+ul .informacion{
+    background-color: inherit !important;
 }
 
 footer #rSociales ul {
@@ -242,7 +248,8 @@ footer ul li img {
 }
 
 #rSociales{
+    display: inline-block;
     background-color: transparent !important; 
     position: relative;
     top: 10px;   
-}
+} 
