@@ -23,13 +23,6 @@
         @import url('https://fonts.googleapis.com/css?family=Anton&subset=latin-ext');
     </style>
     <title>DIW</title>
-    <script>
-    $(document).ready(function(){    
-        $(".novedadViento").click(alert("Soy la pagina Viento"));
-        $(".novedadCuerda").click(alert("Soy la pagina Cuerda"));
-        $(".novedadPercusion").click(alert("Soy la pagina Percusion"));
-    });
-    </script>
 </head>
 
 <body>
@@ -66,7 +59,7 @@
                             <a href="javascript:void(0)" class="pestañabtn">Instrumentos de Viento</a>
                             <div class="contenidoPestaña">
                                 <a href="galeriaPaginas.html" class="novedadViento">Novedades</a>
-                                <a href="galeriaPaginas.html">Más Vendidos</a>
+                                <a href="galeriaPaginas.html" class="mVendidoViento">Más Vendidos</a>
                                 <a href="galeriaPaginas.html">Catalogo</a>
                                 <a href="galeriaPaginas.html">Recambios</a>
                             </div>
@@ -108,7 +101,45 @@
 
     <!--Cuerpo-->
     
-    <div><h1>Galeria de cosas que hay que implementar</h1></div>
+   
+<div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_fjords.jpg">
+            <img src="img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
 
     <!--Pie de página-->
     <footer>
