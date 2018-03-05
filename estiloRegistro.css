@@ -1,0 +1,132 @@
+.contenedorNav{
+    text-align: center;
+}
+/* Full-width input fields */
+.derechaUl input[type=text],
+.derechaUl input[type=password] {    
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.derechaUl button{
+    border: none;
+    background: none;
+    outline: none;
+}
+.derechaUl button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+
+.derechaUl .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    outline: none;
+    background-color: #00000083;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.derechaUl .container {
+    padding: 16px;
+}
+
+.derechaUl span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+.derechaUl .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+.derechaUl .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+.derechaUl .close {
+    right: 25px;
+    position: absolute;
+    color: #000;
+    top: 0;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.derechaUl .close:hover,
+.derechaUl .close:focus {
+    cursor: pointer;
+    color: red;
+}
+
+/* Add Zoom Animation */
+
+.derechaUl .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+.derechaUl span.psw {
+    display: block;
+    float: none;
+}
+.derechaUl  .cancelbtn {
+    width: 100%;
+    }
+}

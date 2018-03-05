@@ -6,3 +6,4 @@ function MostrarVideo(boton) {
     videosource.setAttribute('src', "VideosMusicales/" + boton.id + ".mp4");
     videocontainer.load();
 };
+
