@@ -183,6 +183,12 @@ li.pestaña {
     display: block;
 }
 
+.derechaUl{
+    float: right;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
 
 /*Comienza el cuerpo de la página*/
 
