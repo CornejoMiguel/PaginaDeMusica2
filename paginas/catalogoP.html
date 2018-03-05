@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../PaginaPrincipal.css">
     <link rel="icon" href="../images/logo.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../estiloRegistro.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Anton&subset=latin-ext');
     </style>
@@ -79,6 +80,86 @@
                             <div class="contenidoPestaña">
                                 <a href="catalogoC.html" class="catalogoPercusion">Catalogo</a>
                             </div>
+                        </li>
+                        <li class="pestaña derechaUl">
+                            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Iniciar Sesión</button>
+
+                            <div id="id01" class="modal">
+
+                                <form class="modal-content animate" action="#">
+                                    <div class="contenedorNav">
+                                        <label for="usuario">
+                                            <b>Nombre de Usuario</b>
+                                        </label>
+                                        <input type="text" placeholder="Ingrese el Usuario" name="usuario" required>
+                                        <br/>
+                                        <br/>
+                                        <label for="password">
+                                            <b>Contraseña</b>
+                                        </label>
+                                        <input type="password" placeholder="Ingrese la Password" name="password" required>
+                                        <br/>
+                                        <br/>
+                                        <button class="cancelbtn" type="submit">Iniciar Sesión</button>
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="margin-bottom:10px;">Cancelar</button>
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Recuperar Contraseña</button>
+
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> Recordar usuario
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById('id01');
+
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function (event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </li>
+                        <li class="pestaña derechaUl">
+                            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Registrarse</button>
+
+                            <div id="id02" class="modal">
+
+                                <form class="modal-content animate" action="#">
+                                    <div class="contenedorNav">
+                                        <label for="usuario">
+                                            <b>Nombre de Usuario</b>
+                                        </label>
+                                        <input type="text" placeholder="Ingrese el Usuario" name="usuario" required>
+                                        <br/>
+                                        <label for="password">
+                                            <b>Contraseña</b>
+                                        </label>
+                                        <input type="password" placeholder="Ingrese la Password" name="password" required>
+                                        <br/>
+                                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+                                        <button type="submit" class="cancelbtn">Crear Cuenta</button>
+                                        <br/>
+                                        <br/>
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember">Acepta los términos y acuerdos con la empresa
+                                    </div>
+                                </form>
+                            </div>
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById('id02');
+
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function (event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
                         </li>
                     </ul>
                 </nav>
