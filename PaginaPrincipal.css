@@ -186,8 +186,12 @@ li.pestaña {
     float: right;
     padding-right: 20px;
     padding-top: 15px;
+    color:white;
 }
 
+label{
+    color:black;
+}
 
 /*Comienza el cuerpo de la página*/
 
