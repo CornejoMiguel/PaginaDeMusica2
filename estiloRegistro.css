@@ -10,6 +10,7 @@
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    color: black;
 }
 
 /* Set a style for all buttons */
