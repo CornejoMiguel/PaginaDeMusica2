@@ -179,31 +179,31 @@
                 <ul id="divCl">
                     <li id="item2">
                         <a class="example-image-link" href="../images/cuerda/puas/puas3.png" data-lightbox="example-set">
-                            <img class="example-image" src="../images/cuerda/puas/puas3.png" alt="amplificador1" />
+                            <img class="example-image" src="../images/cuerda/puas/puas3.png" alt="Puas 3" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="11" titulo="Puas 3">Comprar</button>
                     </li>
                     <li>
                         <a class="example-image-link" href="../images/cuerda/puas/puas2.png" data-lightbox="example-set">
-                            <img class="example-image" src="../images/cuerda/puas/puas2.png" alt="amplificador2" />
+                            <img class="example-image" src="../images/cuerda/puas/puas2.png" alt="Puas 2" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="8" titulo="Puas 2">Comprar</button>
                     </li>
                     <li>
                         <a class="example-image-link" href="../images/cuerda/puas/puas4.png" data-lightbox="example-set">
-                            <img class="example-image" src="../images/cuerda/puas/puas4.png" alt="amplificaodor3" />
+                            <img class="example-image" src="../images/cuerda/puas/puas4.png" alt="Puas 4" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="6" titulo="Puas 4">Comprar</button>
                     </li>
                     <li>
                         <a class="example-image-link" href="../images/cuerda/puas/puas5.png" data-lightbox="example-set">
-                            <img class="example-image" src="../images/cuerda/puas/puas5.png" alt="amplificaodor3" />
+                            <img class="example-image" src="../images/cuerda/puas/puas5.png" alt="Puas 5" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="5" titulo="Puas 5">Comprar</button>
                     </li>
                 </ul>
 
@@ -235,5 +235,28 @@
         </div>
     </footer>
 </body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/minicart/3.0.6/minicart.js'></script>
+<script>
+    //Configuración Inicial
+    paypal.minicart.render({
+        strings: {
+            button: 'Pagar',
+            buttonAlt: "Total:",
+            subtotal: 'Total:',
+            empty: 'No hay productos en el carrito'
+        }
+    });
+
+    //Eventos para agregar productos al carrito
+    $('.compra').click(function (e) {
+        e.stopPropagation();
+        paypal.minicart.cart.add({
+            business: "comprasDiw@gmail.com",
+            item_name: $(this).attr("titulo"),
+            amount: $(this).attr("precio"),
+            currency_code: 'USD'
+        });
+    });</script>
 
 </html>

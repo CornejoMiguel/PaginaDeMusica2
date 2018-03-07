@@ -179,24 +179,24 @@
                 <ul id="divCl">
                     <li id="item2">
                         <a class="example-image-link" href="../images/cuerda/cuerdas/cuerda1.png" data-lightbox="example-set">
-                            <img class="example-image" src="../images/cuerda/cuerdas/cuerda1.png" alt="amplificador1" />
+                            <img class="example-image" src="../images/cuerda/cuerdas/cuerda1.png" alt="Cuerdas Set 1" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="3" titulo="Cuerdas Set 1">Comprar</button>
                     </li>
                     <li>
                         <a class="example-image-link" href="../images/cuerda/cuerdas/cuerda2.png" data-lightbox="example-set">
-                            <img class="example-image" src="../images/cuerda/cuerdas/cuerda2.png" alt="amplificador2" />
+                            <img class="example-image" src="../images/cuerda/cuerdas/cuerda2.png" alt="Cuerdas Set 2" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="3" titulo="Cuerdas Set 2">Comprar</button>
                     </li>
                     <li>
                         <a class="example-image-link" href="../images/cuerda/cuerdas/cuerda3.png" data-lightbox="example-set">
-                            <img class="example-image" src="../images/cuerda/cuerdas/cuerda3.png" alt="amplificaodor3" />
+                            <img class="example-image" src="../images/cuerda/cuerdas/cuerda3.png" alt="Cuerdas Set 3" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="3" titulo="Cuerdas Set 3">Comprar</button>
                     </li>
                 </ul>
             </div>
@@ -227,5 +227,28 @@
         </div>
     </footer>
 </body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/minicart/3.0.6/minicart.js'></script>
+<script>
+    //Configuración Inicial
+    paypal.minicart.render({
+        strings: {
+            button: 'Pagar',
+            buttonAlt: "Total:",
+            subtotal: 'Total:',
+            empty: 'No hay productos en el carrito'
+        }
+    });
+
+    //Eventos para agregar productos al carrito
+    $('.compra').click(function (e) {
+        e.stopPropagation();
+        paypal.minicart.cart.add({
+            business: "comprasDiw@gmail.com",
+            item_name: $(this).attr("titulo"),
+            amount: $(this).attr("precio"),
+            currency_code: 'USD'
+        });
+    });</script>
 
 </html>

@@ -182,35 +182,35 @@
                             <img class="example-image" src="../images/viento/clarinete_alto.png" alt="clarinete_alto" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button  class="compra" precio="600" titulo="Clarinete alto">Comprar</button>
                     </li>
                     <li>
                         <a class="example-image-link" href="../images/viento/saxophone.png" data-lightbox="example-set">
                             <img class="example-image" src="../images/viento/saxophone.png" alt="saxophone" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="500" titulo="Saxophone">Comprar</button>
                     </li>
                     <li>
                         <a class="example-image-link" href="../images/viento/saxophone2.png" data-lightbox="example-set">
                             <img class="example-image" src="../images/viento/saxophone2.png" alt="saxophone2" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="700" titulo="Saxophone 2">Comprar</button>
                     </li>
                     <li>
                         <a class="example-image-link" href="../images/viento/trompa.png" data-lightbox="example-set">
                             <img class="example-image" src="../images/viento/trompa.png" alt="trompa" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="400" titulo="Trompa">Comprar</button>
                     </li>
                     <li>
                         <a class="example-image-link" href="../images/viento/trombon_varas.png" data-lightbox="example-set">
                             <img class="example-image" src="../images/viento/trombon_varas.png" alt="trombon" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="550" titulo="Trombon">Comprar</button>
                     </li>
             </div>
         </div>
@@ -240,5 +240,27 @@
         </div>
     </footer>
 </body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/minicart/3.0.6/minicart.js'></script>
+<script>
+    //Configuración Inicial
+    paypal.minicart.render({
+        strings: {
+            button: 'Pagar',
+            buttonAlt: "Total:",
+            subtotal: 'Total:',
+            empty: 'No hay productos en el carrito'
+        }
+    });
+
+    //Eventos para agregar productos al carrito
+    $('.compra').click(function (e) {
+        e.stopPropagation();
+        paypal.minicart.cart.add({
+            business: "comprasDiw@gmail.com",
+            item_name: $(this).attr("titulo"),
+            amount: $(this).attr("precio"),
+            currency_code: 'USD'
+        });
+    });</script>
 
 </html>

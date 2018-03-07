@@ -228,7 +228,7 @@
                             <img class="example-image" src="images\instrumentos\fender.png" alt="" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="500" titulo="Guitarra Fender">Comprar</button>
                         <button id="guitarra" onclick="MostrarVideo(this)">Mostrar prueba</button>
                     </li>
                     <li>
@@ -236,7 +236,7 @@
                             <img class="example-image" src="images\instrumentos\guitarra_ej.png" alt="" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="450" titulo="Guitarra Electrica">Comprar</button>
                         <button id="guitarra_electrica" onclick="MostrarVideo(this)">Mostrar prueba</button>
                     </li>
                     <li>
@@ -244,7 +244,7 @@
                             <img class="example-image" src="images\instrumentos\mapex.png" alt="" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="600" titulo="Batería Mapex">Comprar</button>
                         <button id="bateria" onclick="MostrarVideo(this)">Mostrar prueba</button>
                     </li>
                     <li>
@@ -252,7 +252,7 @@
                             <img class="example-image" src="images\instrumentos\piano_ej.png" alt="" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="800" titulo="Piano">Comprar</button>
                         <button id="piano" onclick="MostrarVideo(this)">Mostrar prueba</button>
                     </li>
                     <li>
@@ -260,7 +260,7 @@
                             <img class="example-image" src="images\instrumentos\saxophone_ej.png" alt="" />
                         </a>
                         <br/>
-                        <button>Comprar</button>
+                        <button class="compra" precio="600" titulo="Saxophone">Comprar</button>
                         <button id="saxophone" onclick="MostrarVideo(this)">Mostrar prueba</button>
                     </li>
                 </ul>
@@ -295,7 +295,28 @@
     </footer>
     <!--JavaScript que nos permite a la hora de pulsar un producto cambiar el video-->
     <script src="PaginaPrincipal.js"></script>
-    <script src="cambiosImagenes.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/minicart/3.0.6/minicart.js'></script>
+    <script>
+        //Configuración Inicial
+        paypal.minicart.render({
+            strings: {
+                button: 'Pagar',
+                buttonAlt: "Total:",
+                subtotal: 'Total:',
+                empty: 'No hay productos en el carrito'
+            }
+        });
+
+        //Eventos para agregar productos al carrito
+        $('.compra').click(function (e) {
+            e.stopPropagation();
+            paypal.minicart.cart.add({
+                business: "comprasDiw@gmail.com",
+                item_name: $(this).attr("titulo"),
+                amount: $(this).attr("precio"),
+                currency_code: 'USD'
+            });
+        });</script>
 </body>
 
 </html>

@@ -135,7 +135,7 @@ ul {
     overflow: hidden;
 }
 
-li {
+.informacion li {
     float: left;
 }
 
@@ -197,13 +197,6 @@ label{
 
 
 /*Columna 3*/
-
-@media (max-width: 1000px) {
-    #esconder {
-        display: none;
-    }
-}
-
 #divCl {
     text-align: center;
     display: flex;
